@@ -32,22 +32,22 @@
                     <div class="collapse navbar-collapse" id="mainNavigation">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav__item">
-                                <a href="{{ url('/') }}" class="nav__item-link active">Home</a>
+                                <a href="{{ url('/') }}" data-toggle="link" class="nav__item-link">Home</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
-                                <a href="{{ url('/about') }}" class="nav__item-link">About</a>
+                                <a href="{{ url('/about') }}" data-toggle="link" class="nav__item-link">About</a>
                             </li><!-- /.nav-item -->
                             {{-- <li class="nav__item">
                                 <a href="{{ url('/project') }}" class="nav__item-link">Projects</a>
                             </li><!-- /.nav-item --> --}}
                             <li class="nav__item">
-                                <a href="{{ url('/blog') }}" class="nav__item-link">Blog</a>
+                                <a href="{{ url('/blog') }}" data-toggle="link" class="nav__item-link">Blog</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
-                                <a href="{{ url('/product') }}" class="nav__item-link">Product</a>
+                                <a href="{{ url('/product') }}" data-toggle="link" class="nav__item-link">Product</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
-                                <a href="{{ url('/teams') }}" class="nav__item-link">Teams</a>
+                                <a href="{{ url('/teams') }}" data-toggle="link" class="nav__item-link">Teams</a>
                             </li><!-- /.nav-item -->
                             <!-- /.nav-item -->
                         </ul><!-- /.navbar-nav -->
