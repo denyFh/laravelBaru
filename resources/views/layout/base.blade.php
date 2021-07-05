@@ -85,13 +85,15 @@
                         <div class="col-sm-12 col-md-4 col-lg-4 footer__widget footer__widget-posts">
                             <h6 class="footer__widget-title">Recent Posts</h6>
                             <div class="footer__widget-content">
+                                @foreach ($recent_posts as $item)
                                 <div class="post-item">
-                                    <div class="post__date">Oct 15, 2017</div>
+                                    <div class="post__date">{{ $item->updated_at->diffForHumans()}}</div>
                                     <h5 class="post__title">
-                                        <a href="#">Four ways to cheer up on Blue Monday!</a>
+                                        <a href="#">{{ $item->title }}</a>
                                     </h5>
                                 </div><!-- /.post-item -->
-                                <div class="post-item">
+                                @endforeach
+                                {{-- <div class="post-item">
                                     <div class="post__date">Oct 18, 2017</div>
                                     <h5 class="post__title">
                                         <a href="#">Old cameras can capture images better than nowdays camera!</a>
@@ -102,7 +104,7 @@
                                     <h5 class="post__title">
                                         <a href="#">New subway line has most advanced technology world!</a>
                                     </h5>
-                                </div><!-- /.post-item -->
+                                </div><!-- /.post-item --> --}}
                             </div>
                         </div><!-- /.col-lg-3 -->
                         <div class="col-sm-12 col-md-4 col-lg-4 footer__widget footer__widget-newsletter">
