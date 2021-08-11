@@ -43,3 +43,11 @@ Route::get('/single', function () {
 Route::get('/product-single', function () {
     return view('single-product');
 });
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('image-view', 'ImageController@index');
+
+Route::post('image-submit', 'ImageController@store');
